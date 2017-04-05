@@ -1,0 +1,113 @@
+2017-04-03 19:47:37  [ Timer-0:9116478 ] - [ DEBUG ]  Checking for expired resources - Mon Apr 03 19:47:37 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:47:37  [ Timer-0:9116478 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@5083adf2 ---> age: 899964   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:47:37  [ Timer-0:9116478 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@703acd0 ---> age: 899955   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:47:37  [ Timer-0:9116478 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@463992c5 ---> age: 899946   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:51:22  [ Timer-0:9341479 ] - [ DEBUG ]  Checking for expired resources - Mon Apr 03 19:51:22 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:51:22  [ Timer-0:9341479 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@5083adf2 ---> age: 1124965   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:51:22  [ Timer-0:9341479 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@703acd0 ---> age: 1124956   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:51:22  [ Timer-0:9341479 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@463992c5 ---> age: 1124947   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:55:07  [ Timer-0:9566479 ] - [ DEBUG ]  Checking for expired resources - Mon Apr 03 19:55:07 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:55:07  [ Timer-0:9566479 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@5083adf2 ---> age: 1349965   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:55:07  [ Timer-0:9566480 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@703acd0 ---> age: 1349957   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:55:07  [ Timer-0:9566480 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@463992c5 ---> age: 1349948   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:58:52  [ Timer-0:9791480 ] - [ DEBUG ]  Checking for expired resources - Mon Apr 03 19:58:52 CST 2017 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:58:52  [ Timer-0:9791480 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@5083adf2 ---> age: 1574966   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:58:52  [ Timer-0:9791480 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@703acd0 ---> age: 1574957   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:58:52  [ Timer-0:9791480 ] - [ DEBUG ]  resource age is okay: com.mchange.v2.c3p0.impl.NewPooledConnection@463992c5 ---> age: 1574948   max: 1800000 [com.mchange.v2.resourcepool.BasicResourcePool@b32318c]
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812224 ] - [ DEBUG ]  DispatcherServlet with name 'dispatcher' processing GET request for [/hello/23]
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812229 ] - [ DEBUG ]  Matching patterns for request [/23] are [/**]
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812229 ] - [ DEBUG ]  URI Template variables for request [/23] are {}
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812230 ] - [ DEBUG ]  Mapping [/23] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@468c6324] and 1 interceptor
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812230 ] - [ DEBUG ]  Last-Modified value for [/hello/23] is: -1
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812230 ] - [ DEBUG ]  Null ModelAndView returned to DispatcherServlet with name 'dispatcher': assuming HandlerAdapter completed request handling
+2017-04-03 19:59:13  [ http-apr-80-exec-4:9812231 ] - [ DEBUG ]  Successfully completed request
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973907 ] - [ INFO ]  Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Mon Apr 03 17:15:46 CST 2017]; parent: Root WebApplicationContext
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973913 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973914 ] - [ DEBUG ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3f29696a: defining beans [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@309c94c5
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973930 ] - [ INFO ]  Closing Root WebApplicationContext: startup date [Mon Apr 03 17:15:41 CST 2017]; root of context hierarchy
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973933 ] - [ DEBUG ]  Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973934 ] - [ DEBUG ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@309c94c5: defining beans [blogDAO,userDAO,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,DataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,txServices,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973968 ] - [ DEBUG ]  Retrieved dependent beans for bean '(inner bean)#6987ac2f': [txAdvice]
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973969 ] - [ DEBUG ]  Invoking destroy() on bean with name 'sessionFactory'
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973971 ] - [ DEBUG ]  HHH000031: Closing
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973976 ] - [ DEBUG ]  Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973977 ] - [ DEBUG ]  Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973978 ] - [ DEBUG ]  Invoking destroy method 'close' on bean with name 'DataSource'
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973980 ] - [ DEBUG ]  ENTER METHOD: closeAll( com.mysql.jdbc.JDBC4Connection@7e0c727a )! -- num_connections: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973981 ] - [ DEBUG ]  Set of statements for connection: null
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973982 ] - [ DEBUG ]  closeAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973984 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@b32318c [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3695ca17)
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973984 ] - [ DEBUG ]  ENTER METHOD: closeAll( com.mysql.jdbc.JDBC4Connection@7957db89 )! -- num_connections: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973985 ] - [ DEBUG ]  Set of statements for connection: null
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973985 ] - [ DEBUG ]  closeAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973986 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@b32318c [managed: 1, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3695ca17)
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973987 ] - [ DEBUG ]  ENTER METHOD: closeAll( com.mysql.jdbc.JDBC4Connection@3116835e )! -- num_connections: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973987 ] - [ DEBUG ]  Set of statements for connection: null
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973987 ] - [ DEBUG ]  closeAll(): com.mchange.v2.c3p0.stmt.DoubleMaxStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973988 ] - [ DEBUG ]  trace com.mchange.v2.resourcepool.BasicResourcePool@b32318c [managed: 0, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3695ca17)
+2017-04-03 20:01:55  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1:9973989 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,RMI Runtime] interrupted. Shutting down.
+2017-04-03 20:01:55  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0:9973990 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,RMI Runtime] interrupted. Shutting down.
+2017-04-03 20:01:55  [ com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2:9973989 ] - [ DEBUG ]  Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,RMI Runtime] interrupted. Shutting down.
+2017-04-03 20:01:55  [ RMI TCP Connection(7)-127.0.0.1:9973992 ] - [ DEBUG ]  com.mchange.v2.c3p0.PoolBackedDataSource@5d559799 has been closed. force_destroy == false
+java.lang.Exception: DEBUG STACK TRACE for PoolBackedDataSource.close().
+	at com.mchange.v2.c3p0.PoolBackedDataSource.close(PoolBackedDataSource.java:214)
+	at com.mchange.v2.c3p0.PoolBackedDataSource.close(PoolBackedDataSource.java:198)
+	at com.mchange.v2.c3p0.ComboPooledDataSource.close(ComboPooledDataSource.java:609)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:350)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:907)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:914)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:884)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5146)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5810)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:224)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1019)
+	at org.apache.catalina.startup.HostConfig.unmanageApp(HostConfig.java:1888)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.removeContext(MBeanFactory.java:910)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:324)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)

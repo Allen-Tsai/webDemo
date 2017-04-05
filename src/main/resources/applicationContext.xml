@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- 自动扫描与装配bean -->
+    <context:component-scan base-package="org.caihaolun"/>
+
+    <!-- 导入外部的properties文件-->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean name="DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <!-- 数据连接信息 -->
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <!-- 其他配置 -->
+        <!--初始化时获取三个连接，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
+        <property name="initialPoolSize" value="${initialPoolSize}"/>
+        <!--连接池中保留的最小连接数。Default: 3 -->
+        <property name="minPoolSize" value="${minPoolSize}"/>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize" value="${maxPoolSize}"/>
+        <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
+        <property name="acquireIncrement" value="${acquireIncrement}"/>
+        <!-- 控制数据源内加载的PreparedStatements数量。如果maxStatements与maxStatementsPerConnection均为0，则缓存被关闭。Default: 0 -->
+        <property name="maxStatements" value="${maxStatements}"/>
+        <!--maxStatementsPerConnection定义了连接池内单个连接所拥有的最大缓存statements数。Default: 0 -->
+        <property name="maxStatementsPerConnection" value="${maxStatementsPerConnection}"/>
+        <!--最大空闲时间,1800秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime" value="${maxIdleTime}"/>
+    </bean>
+
+    <!-- 配置SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <!-- 配置c3p0数据库连接池 -->
+        <property name="dataSource" ref="DataSource"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.show_sql">
+                    ${hibernate.show_sql}
+                </prop>
+                <prop key="hibernate.use_sql_comments">
+                    ${hibernate.use_sql_comments}
+                </prop>
+                <!--<prop key="hibernate.hbm2ddl.auto">create</prop>-->
+                <prop key="hibernate.dialect">
+                    ${hibernate.dialect}
+                </prop>
+                <prop key="hibernate.jdbc.fetch_size">
+                    ${hibernate.jdbc.fetch_size}
+                </prop>
+                <prop key="hibernate.jdbc.batch_size">
+                    ${hibernate.jdbc.batch_size}
+                </prop>
+                <prop key="hibernate.use_outer_join">
+                    ${hibernate.use_outer_join}
+                </prop>
+                <prop key="cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+                <prop key="hibernate.query.factory_class">${hibernate.query.factory_class}</prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/webDemo</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+            </props>
+        </property>
+        <!-- 自动扫描注解方式配置的hibernate类文件 -->
+        <property name="packagesToScan" value="org.caihaolun.model"/>
+    </bean>
+
+    <!--<tx:annotation-driven transaction-manager="txManager"/>-->
+    <bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- 配置事务事务属性 --><!--<tx:annotation-driven transaction-manager="txManager"/>-->
+    <tx:advice id="txAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <tx:method name="save*" read-only="false" propagation="REQUIRED"/>
+            <tx:method name="find*" read-only="true" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--<context:annotation-config/>-->
+    <aop:config>
+        <aop:pointcut id="txServices" expression="execution(* org.caihaolun.dao.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txServices"/>
+    </aop:config>
+
+</beans>
